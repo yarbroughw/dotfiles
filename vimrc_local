@@ -1,0 +1,40 @@
+let g:indent_guides_enable_on_vim_startup = 0
+
+let g:syntastic_python_checkers = ['pep8', 'pyflakes', 'python', 'flake8']
+
+"iunmap <expr> <Esc>
+
+" left/right arrows to switch buffers in normal mode
+map <right> :bn<cr>
+map <left> :bp<cr>
+
+set nofoldenable
+let g:DisableAutoPHPFolding = 1
+let g:pymode_folding = 0
+let g:pymode_indent = 0
+let g:foldlevelstart=0
+
+Bundle 'kshenoy/vim-signature'
+Plugin 'hynek/vim-python-pep8-indent'
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" SYNTASTIC DEFAULTS """""""""""""""""""""""""""""""""""
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" INDENT SETTINGS """"""""""""""""""""""""""""""""""""""
+setlocal tabstop=4
+setlocal softtabstop=4
+setlocal shiftwidth=4
+setlocal textwidth=80
+setlocal smarttab
+setlocal expandtab
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
