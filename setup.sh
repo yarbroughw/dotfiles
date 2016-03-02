@@ -25,4 +25,4 @@ sh <(curl https://j.mp/spf13-vim3 -L)
 ln -sf ~/dotfiles/vimrc_local ~/.vimrc.local
 
 # install some utilities
-sudo apt-get install silversearcher-ag
+sudo apt-get install silversearcher-ag ipython

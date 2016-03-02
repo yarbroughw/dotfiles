@@ -17,6 +17,7 @@ let g:foldlevelstart=0
 Bundle 'kshenoy/vim-signature'
 Plugin 'hynek/vim-python-pep8-indent'
 
+set nospell
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 " SYNTASTIC DEFAULTS """""""""""""""""""""""""""""""""""
