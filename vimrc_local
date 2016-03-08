@@ -10,9 +10,9 @@ map <left> :bp<cr>
 
 set nofoldenable
 let g:DisableAutoPHPFolding = 1
+let g:foldlevelstart=0
 let g:pymode_folding = 0
 let g:pymode_indent = 0
-let g:foldlevelstart=0
 
 Bundle 'kshenoy/vim-signature'
 Plugin 'hynek/vim-python-pep8-indent'
@@ -39,3 +39,7 @@ setlocal smarttab
 setlocal expandtab
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
